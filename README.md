@@ -1,6 +1,8 @@
 # OOP-LRU
-记录了算是第一次自己进行的面向对象编程
-写之前花了很久读题目，看了答案仍然觉得很模糊，找了张纸写了下思路，突然清晰了点
+记录了算是第一次自己进行的面向对象编程  
+
+写之前花了很久读题目，看了答案仍然觉得很模糊，找了张纸写了下思路，突然清晰了点  
+
 ![b339bd758fb1d8ae21f4f4e1ba5a1b1](https://github.com/user-attachments/assets/45a1e89b-d2e6-449a-a6bc-2589b87ae100)
 
 ```python
@@ -60,9 +62,13 @@ class LRUCache:
 
 
 ```
-#problenm
-##1.为什么在get方法中，node = self.cache[key]而不能直接node=key
-![image](https://github.com/user-attachments/assets/dd8144b8-e28e-4c7d-b32f-58c7bf5a69e7)
-##2.我理解 get 的过程是：如果 key 存在哈希表中，就通过 key 查找到对应的 value。但我不明白这个 value 是怎么和 DLinkedNode 关联的。硬要说的话，双链表中某个节点的值就是哈希表中那个键对应的值？
-![image](https://github.com/user-attachments/assets/e5a186d6-970a-49b2-915c-a87b1fbd1fa0)
+# problem
+## 1.为什么在get方法中，node = self.cache[key]而不能直接node=key  
+
+![image](https://github.com/user-attachments/assets/dd8144b8-e28e-4c7d-b32f-58c7bf5a69e7)  
+
+## 2.我理解 get 的过程是：如果 key 存在哈希表中，就通过 key 查找到对应的 value。但我不明白这个 value 是怎么和 DLinkedNode 关联的。硬要说的话，双链表中某个节点的值就是哈希表中那个键对应的值？  
+
+![image](https://github.com/user-attachments/assets/e5a186d6-970a-49b2-915c-a87b1fbd1fa0)  
+
 这里哈希表的value类似于一个指针，可以直接指向双链表中的某个节点
